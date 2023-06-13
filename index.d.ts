@@ -105,7 +105,7 @@ export interface DatePickerProps extends ViewProps {
   theme?: 'light' | 'dark' | 'auto'
 
   /** Time string title */
-  timeTitle?: string | 'Select time'
+  timeTitle?: string
 }
 
 export default class DatePicker extends Component<DatePickerProps> {}
