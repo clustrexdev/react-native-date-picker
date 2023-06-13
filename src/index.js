@@ -53,10 +53,10 @@ const getAndroidVariant = (props) => {
 }
 
 const getTitle = (props) => {
-  const { title, mode } = props
+  const { title, mode, timeTitle } = props
   if (title === null) return ''
   if (title) return title
-  if (mode === 'time') return 'Select time'
+  if (mode === 'time') return timeTitle || 'Select time'
   return 'Select date'
 }
 
